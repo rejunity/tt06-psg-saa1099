@@ -12,7 +12,7 @@
 * Manuals from Sam Coupe: https://velesoft.speccy.cz/samcoupe/saa1099/saa1099-doc5-en.png
 * Manuals from Sam Coupe: https://www.worldofsam.org/products/saa1099
 
-## Chip technical capabilitie
+## Chip technical capabilities
 
 * 6 frequency generators, 8 octaves, 256 tones per octave, frequency range ffrom 31 Hz to 7.81 kHz
 * 2 noise generators, range from 61 to 15.6 kHz
@@ -42,9 +42,24 @@ SAA1099  (Philips)
    CLK	 8	 11   D1
    GND	 9	 10   D0
 ```
+
 ## Tests
 * envelope test: https://www.youtube.com/watch?v=-ELEH-RX0JE
-* 
+
+
+## Recordings from the real chip by Jepael
+http://www.vogons.org/viewtopic.php?f=9&t=51695
+
+### Noise
+```
+SAA1099P noise generator as documented by Jepael
+seed unknown, must be non-zero
+18-bit Galois LFSR
+Feedback polynomial = x^18 + x^11 + x^1
+Period = 2^18-1 = 262143 bits
+Verified to match recorded noise from my SAA1099P
+```
+
 
 ## Implementations
 * MAME https://github.com/mamedev/mame/blob/master/src/devices/sound/saa1099.cpp
