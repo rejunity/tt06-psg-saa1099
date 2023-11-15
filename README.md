@@ -42,9 +42,13 @@ SAA1099  (Philips)
    CLK	 8	 11   D1
    GND	 9	 10   D0
 ```
+## Tests
+* envelope test: https://www.youtube.com/watch?v=-ELEH-RX0JE
+* 
 
 ## Implementations
 * MAME https://github.com/mamedev/mame/blob/master/src/devices/sound/saa1099.cpp
+* Unreal emu, seems to be identical to MAME https://github.com/tslabs/zx-evo/blob/master/pentevo/unreal/Unreal/saa1099.cpp
 * System Verilog for MIST Board https://github.com/sorgelig/SAMCoupe_MIST/blob/master/saa1099.sv
 * C https://github.com/stripwax/SAASound
 * Play MIDI on Arduino with SAA1099: https://github.com/Bobcatmodder/SAATunes
