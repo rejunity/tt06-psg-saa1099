@@ -1,5 +1,51 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg)
 
+
+# Philips SAA1099 PSG in Verilog for Tiny Tapeout
+
+* Wiki: https://en.wikipedia.org/wiki/Philips_SAA1099 and https://www.wikiwand.com/en/Philips_SAA1099
+* Manuals: https://www.vgmpf.com/Wiki/images/1/19/SAA1099_-_Manual_-_1984.pdf
+* Manuals from SGI: http://www.sgistuff.net/mirrors/4dfaq/#appendixB
+* Manuals from Sam Coupe: https://velesoft.speccy.cz/saa1099-cz.htm
+* Manuals from Sam Coupe: https://velesoft.speccy.cz/samcoupe/saa1099/saa-1099_pinouts.txt
+* Manuals from Sam Coupe: https://velesoft.speccy.cz/samcoupe/saa1099/saa1099-doc5-en.png
+* Manuals from Sam Coupe: https://www.worldofsam.org/products/saa1099
+
+## Chip technical capabilitie
+
+* 6 frequency generators, 8 octaves, 256 tones per octave, frequency range ffrom 31 Hz to 7.81 kHz
+* 2 noise generators, range from 61 to 15.6 kHz
+* 2 envelope generators
+* common clock frequency 8 MHz
+
+## Historical use of the Philips SAA1099
+* Silicon Graphics IRIS Professional 4D and IRIS Power 4D machines
+* Creative Sound Blaster 1.0 card
+* Sam Coupe home computer
+* System 5 arcade game system
+
+## Pinout
+
+SAA1099  (Philips)
+------------------------
+
+  func	pin	pin   func
+
+   /WR	 1	 18   Vcc
+   /CS	 2	 17   D7
+    A0	 3	 16   D6
+  OutR	 4	 15   D5
+  OutL	 5	 14   D4
+  Iref	 6	 13   D3
+/DTACK	 7	 12   D2
+   CLK	 8	 11   D1
+   GND	 9	 10   D0
+
+
+## Implementations
+* https://github.com/stripwax/SAASound C
+* 
+
 # What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
