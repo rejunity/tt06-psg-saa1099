@@ -26,7 +26,7 @@
 * System 5 arcade game system
 
 ## Pinout
-
+```
 SAA1099  (Philips)
 ------------------------
 
@@ -41,7 +41,7 @@ SAA1099  (Philips)
 /DTACK	 7	 12   D2
    CLK	 8	 11   D1
    GND	 9	 10   D0
-
+```
 
 ## Implementations
 * MAME https://github.com/mamedev/mame/blob/master/src/devices/sound/saa1099.cpp
