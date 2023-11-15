@@ -4,6 +4,7 @@
 # Philips SAA1099 PSG in Verilog for Tiny Tapeout
 
 * Wiki: https://en.wikipedia.org/wiki/Philips_SAA1099 and https://www.wikiwand.com/en/Philips_SAA1099
+* Wiki: https://www.vgmpf.com/Wiki/index.php?title=SAA1099
 * Manuals: https://www.vgmpf.com/Wiki/images/1/19/SAA1099_-_Manual_-_1984.pdf
 * Manuals from SGI: http://www.sgistuff.net/mirrors/4dfaq/#appendixB
 * Manuals from Sam Coupe: https://velesoft.speccy.cz/saa1099-cz.htm
@@ -43,8 +44,11 @@ SAA1099  (Philips)
 
 
 ## Implementations
-* https://github.com/stripwax/SAASound C
-* 
+* MAME https://github.com/mamedev/mame/blob/master/src/devices/sound/saa1099.cpp
+* System Verilog for MIST Board https://github.com/sorgelig/SAMCoupe_MIST/blob/master/saa1099.sv
+* C https://github.com/stripwax/SAASound
+* Play MIDI on Arduino with SAA1099: https://github.com/Bobcatmodder/SAATunes
+* https://github.com/SudoMaker/RetroWave
 
 # What is Tiny Tapeout?
 
