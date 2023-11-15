@@ -17,7 +17,7 @@
 * 6 frequency generators, 8 octaves, 256 tones per octave, frequency range ffrom 31 Hz to 7.81 kHz
 * 2 noise generators, range from 61 to 15.6 kHz
 * 2 envelope generators
-* common clock frequency 8 MHz
+* common clock frequency 8 MHz, the SAA1099s on the GameBlaster are clocked at 7.15909 MHz ( highest frequency the tone generators can reach is about 6.99 kHz)
 
 ## Historical use of the Philips SAA1099
 * Silicon Graphics IRIS Professional 4D and IRIS Power 4D machines
@@ -46,9 +46,10 @@ SAA1099  (Philips)
 ## Tests
 * envelope test: https://www.youtube.com/watch?v=-ELEH-RX0JE
 
-
-## Recordings from the real chip by Jepael
-http://www.vogons.org/viewtopic.php?f=9&t=51695
+## Recordings from the real chip
+* by Jepael http://www.vogons.org/viewtopic.php?f=9&t=51695
+* by van Heusden https://vanheusden.com/electronics/SAA1099-clock/
+* http://www.etheroneph.com/machinery/529-zvukogenerator-saa1099.html
 
 ### Noise
 ```
@@ -60,6 +61,24 @@ Period = 2^18-1 = 262143 bits
 Verified to match recorded noise from my SAA1099P
 ```
 
+### Octaves
+Apparently that makes the noisegen to be clocked by the undivided octave clock, so lowest octave 0 is same as rate X. And each octave higher doubles the noise frequency.
+
+### Notes
+```
+B         5
+C         33
+C#       60
+D         85
+D#       109
+E         132
+F          153
+F#        173
+G         192
+G#       210
+A         227
+A#       243
+```
 
 ## Implementations
 * MAME https://github.com/mamedev/mame/blob/master/src/devices/sound/saa1099.cpp
