@@ -47,6 +47,7 @@ SAA1099  (Philips)
 * envelope test: https://www.youtube.com/watch?v=-ELEH-RX0JE
 
 ## Recordings from the real chip
+* PDM tables by stripwax https://www.vogons.org/viewtopic.php?f=9&t=51695&start=60
 * by Jepael http://www.vogons.org/viewtopic.php?f=9&t=51695
 * by van Heusden https://vanheusden.com/electronics/SAA1099-clock/
 * http://www.etheroneph.com/machinery/529-zvukogenerator-saa1099.html
